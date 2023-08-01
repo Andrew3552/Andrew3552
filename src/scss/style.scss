@@ -17,6 +17,12 @@
 /**
 * Подключение стилей отдельных блоков и секций
 */
+
+@import 'components/header';
+@import 'components/main';
+
+
 @import 'components/advantages';
 @import 'components/pricing';
 @import 'components/revolutionary';
+

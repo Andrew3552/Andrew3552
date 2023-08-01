@@ -2,6 +2,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import TerserPlugin from 'terser-webpack-plugin';
 
+import webpack from 'webpack';
+
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -20,8 +23,20 @@ export const webpackConfig = (isMode) => {
       publicPath: '/',
     },
     devtool: false,
+
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
+    ],
+  };
+
+
   };
   
+
   if (!isMode) {
     config.optimization = {
       minimize: true,
