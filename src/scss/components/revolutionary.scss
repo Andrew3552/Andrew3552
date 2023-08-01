@@ -7,7 +7,7 @@
     }
     &__body {
       h2 {
-        color: clr-title-rev;
+        color: $clr-title-rev;
         text-align: center;
         @include montserrat-700;
         font-size: 54px;
