@@ -4,7 +4,7 @@
   background-size: cover;
   padding: 83px 0 61px;
   .container {
-    max-width: 1193px;
+    max-width: 1200px;
     margin: $margin;
     padding: 0 10px;
   }
@@ -41,6 +41,9 @@
         line-height: 1;
         text-transform: uppercase;
         padding: 36px 30px;
+        @media screen and (max-width: 560px) {
+          font-size: 21px;
+        }
       }
     }
     &_card-discription {

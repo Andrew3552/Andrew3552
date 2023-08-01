@@ -1,8 +1,11 @@
 .about-fork {
-  background: url('../../images/bg2.png') center/cover no-repeat;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0px auto;
+  background: url('../../images/bg2.png') center 13px /cover no-repeat;
+ padding-bottom: 30px;
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
   &__title {
     color: $color-f;
@@ -10,7 +13,7 @@
     font-size: 48px;
     @include size;
     padding: 108px 10px 82px;
-    margin-top: 122px;
+   
     font-family: Montserrat;
     @media screen and (max-width: 992px) {
       font-size: 42px;
@@ -265,7 +268,10 @@
   line-height: 1.85;
   max-width: 887px;
   margin: 0 auto;
-  padding: 0 10px 50px;
+  padding: 0 10px;
+  @media screen and (max-width: 480px) {
+    padding: 0 10px 36px;
+  }
   &::after {
     content: '';
     width: 780px;
@@ -273,17 +279,17 @@
     background: $color-bgm;
     position: absolute;
     @include position;
-    top: 60%;
+    top: 150%;
     @media screen and (max-width: 992px) {
       width: 555px;
-      top: 75%;
+      top: 130%;
     }
     @media screen and (max-width: 678px) {
       width: 400px;
     }
     @media screen and (max-width: 480px) {
       width: 245px;
-      top: 85%;
+      top: 90%;
     }
   }
 }
